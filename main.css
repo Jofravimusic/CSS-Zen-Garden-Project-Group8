@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+h1, h2 {
+  font-family: "Lora", serif;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+div {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin: -0.5em;
+}
+
+header {
+  background-color: #6495ED;
+  padding: 2em;
+  color: #FAEBD7;
+  text-align: right;
+}
+header h1 a {
+  text-decoration: none;
+  color: #FAEBD7;
+}
+
+main {
+  background-color: #FAEBD7;
+  padding: 4em;
+}
+
+li {
+  overflow: hidden;
+  padding-bottom: 1em;
+}
+li a, li a:visited {
+  text-decoration: none;
+  color: #FAEBD7;
+}
+li a:active {
+  color: #DEB887;
+}
+li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.post-content p a, .post-content p a:visited {
+  text-decoration: none;
+  color: #6495ED;
+}
+.post-content p a:active {
+  color: #DEB887;
+}
+.post-content p a:hover {
+  text-decoration: underline;
+}
+
+.post-content h2 a, .post-content h2 a:visited {
+  text-decoration: none;
+  color: #000;
+}
+.post-content h2 a:active {
+  color: #DEB887;
+}
+.post-content h2 a:hover {
+  text-decoration: underline;
+  color: #6495ED;
+}
+
+article {
+  max-width: 100%;
+  box-shadow: 1px 1px 4px 1px #888;
+  border-radius: 3px;
+  background-color: white;
+  overflow: hidden;
+  padding: 3em;
+  margin-bottom: 3em;
+}
+
+.post-date {
+  color: gray;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 700px) {
+  div {
+    display: block;
+  }
+
+  main {
+    padding: 2em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
