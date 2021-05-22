@@ -1,7 +1,7 @@
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
-@import 'partials/basic-style';
+
 
 // color palette - these colors will be the color swatches of the Colors section
 
@@ -19,6 +19,8 @@ $alert: $color-3; // red
 // fonts
 $primary-font: 'Merriweather', serif;
 $secondary-font: 'Open Sans', sans-serif;
+
+@import 'partials/basic-style';
 
 /* -------------------------------- 
 
