@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400;1,600&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*font-family: 'Patrick Hand', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Tinos', serif;*/
+
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
@@ -17,8 +23,8 @@ $success: #6fce72; // green
 $alert: $color-3; // red
 
 // fonts
-$primary-font: 'Merriweather', serif;
-$secondary-font: 'Open Sans', sans-serif;
+$primary-font: 'Poppins', sans-serif;;
+$secondary-font: 'Tinos', serif;;
 
 @import 'partials/basic-style';
 
