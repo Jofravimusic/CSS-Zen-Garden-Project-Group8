@@ -54,6 +54,23 @@ header {
 	}
 }
 
+.cd-primary-nav li{
+	& a, & a:visited{
+		color: $color-1;
+		text-decoration: none;
+	}
+	& a:hover{
+		color:$color-2;
+	}
+	& a:active{
+		color: $color-3;
+	}
+	& a:focus{
+		color: $color-4;
+		background: $color-2;
+	}
+
+}
 .cd-logo {
 	display: inline-block;
 	height: 100%;

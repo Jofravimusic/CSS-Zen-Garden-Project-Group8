@@ -117,6 +117,21 @@ header nav {
   }
 }
 
+.cd-primary-nav li a, .cd-primary-nav li a:visited {
+  color: #57719E;
+  text-decoration: none;
+}
+.cd-primary-nav li a:hover {
+  color: #000;
+}
+.cd-primary-nav li a:active {
+  color: #B7CECE;
+}
+.cd-primary-nav li a:focus {
+  color: #E2E2E2;
+  background: #000;
+}
+
 .cd-logo {
   display: inline-block;
   height: 100%;
