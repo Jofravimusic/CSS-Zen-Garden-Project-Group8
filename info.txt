@@ -1,0 +1,3 @@
+I've install a linux on my machine. I'm testing the programming tools needed for this project.
+
+Greetings.
