@@ -3,6 +3,7 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'Tinos', serif;*/
 .page-wrapper {
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */
