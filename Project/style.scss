@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400;1,600&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*font-family: 'Patrick Hand', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Tinos', serif;*/
+
+// color palette - these colors will be the color swatches of the Colors section
+
+$color-1: #57719E; // Cornflower Blue - Action color
+$color-2: #000; // Dark Blue
+$color-3: #B7CECE; // Red
+$color-4: #E2E2E2; // light grey
+$color-5: #ffffff; // white
+
+@import "partials/small-layout"
