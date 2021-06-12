@@ -1,0 +1,37 @@
+@mixin content-box{
+    margin: 1.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%;
+}
+
+.preamble{
+    @include content-box();
+  }
+  
+  .explanation {
+    @include content-box();
+  }
+  
+  .participation{
+    @include content-box();
+  }
+  
+  .benefits {
+    @include content-box();
+  }
+
+  .requirements{
+    @include content-box();
+    border-radius: 5%;
+  }
+
+  .requirements p:last-child{
+    font-size: 10px;
+  }
+
+  .page-wrapper{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) 20vw;
+      
+  }

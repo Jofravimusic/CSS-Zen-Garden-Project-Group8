@@ -141,5 +141,43 @@ font-family: 'Tinos', serif;*/
     grid-column: 1/5;
     grid-row: 4/5;
     text-align: center; } }
+@media screen and (min-width: 45.01em) {
+  .preamble {
+    margin: 1.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%; }
+
+  .explanation {
+    margin: 1.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%; }
+
+  .participation {
+    margin: 1.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%; }
+
+  .benefits {
+    margin: 1.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%; }
+
+  .requirements {
+    margin: 1.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%;
+    border-radius: 5%; }
+
+  .requirements p:last-child {
+    font-size: 10px; }
+
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 20vw; } }
 
 /*# sourceMappingURL=style.css.map */
