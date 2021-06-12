@@ -12,3 +12,137 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 .intro {
     background-color: black;
 }
+
+@mixin content-box{
+    margin: 1.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%;
+}
+
+.preamble{
+    @include content-box();
+  }
+  
+  .explanation {
+    @include content-box();
+  }
+  
+  .participation{
+    @include content-box();
+  }
+  
+  .benefits {
+    @include content-box();
+  }
+
+  .requirements{
+    @include content-box();
+    border-radius: 5%;
+  }
+
+  .requirements p:last-child{
+    font-size: 10px;
+  }
+
+  /* ICONS */
+
+footer{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+  
+  /* SELECT A DESIGN */
+  
+  .select{
+    text-align: center;
+  }
+  
+  .design-selection nav ul{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.1em;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  /* VIEW ALL DESIGNS */
+  
+  .archives{
+    display: none;
+  }
+  
+  .design-archives ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+  
+  .viewall{
+    list-style-type: none;
+  }
+  
+  .viewall a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    
+  }
+  
+  .next {
+    display: none;
+  }
+  
+  
+  /* RESOURCES */
+  
+  .zen-resources ul{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.1em;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  .resources {
+    text-align: center;
+    text-transform: uppercase;
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+  
+  .view-css{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-align: center;
+  }
+  
+  .css-resources{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    text-align: center;
+  }
+  
+  .zen-faq{
+    grid-column: 3/5;
+    grid-row: 2/3;
+    text-align: center;
+  }
+  
+  .zen-submit{
+    grid-column: 3/5;
+    grid-row: 3/4;
+    text-align: center;
+  }
+  
+  .zen-translations{
+    grid-column: 1/5;
+    grid-row: 4/5;
+    text-align: center;
+  }
