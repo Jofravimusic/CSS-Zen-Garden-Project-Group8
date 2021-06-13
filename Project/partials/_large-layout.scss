@@ -1,8 +1,25 @@
+  .page-wrapper{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) 20vw;
+      
+  }
+  .intro{
+      grid-column: span 3;
+  }
+
+  .main{
+      grid-column: 1 /span 2;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1em;
+  }
+
 @mixin content-box{
-    margin: 1.5rem;
+    margin: 0.5em;
     text-align: center;
     border: 2px solid;
     border-radius: 10%;
+    padding: 1vw;
 }
 
 .preamble{
@@ -30,8 +47,22 @@
     font-size: 10px;
   }
 
-  .page-wrapper{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr) 20vw;
-      
+  .sidebar{
+      margin: 0.5em;
+    text-align: center;
+    border: 2px solid;
+  }
+
+  .design-selection nav ul{
+    display: inline-block;
+    padding: 1vw;
+
+
+    & li{
+        margin: 1vw;
+        border: 2px solid;
+        border-radius: 25%;
+        list-style: none;
+        padding: 1vw;
+    }
   }
