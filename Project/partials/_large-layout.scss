@@ -1,13 +1,13 @@
-  .page-wrapper{
+.page-wrapper{
       display: grid;
       grid-template-columns: repeat(2, 1fr) 20vw;
       
-  }
-  .intro{
+}
+.intro{
       grid-column: span 3;
-  }
+}
 
-  .main{
+.main{
       grid-column: 1 /span 2;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -24,39 +24,42 @@
 
 .preamble{
     @include content-box();
-  }
-  
-  .explanation {
-    @include content-box();
-  }
-  
-  .participation{
-    @include content-box();
-  }
-  
-  .benefits {
-    @include content-box();
-  }
+}
 
-  .requirements{
+.explanation {
+    @include content-box();
+    grid-column: 1;
+}
+  
+.participation{
+    @include content-box();
+    grid-column: 2;
+}
+  
+.benefits {
+    @include content-box();
+    grid-column: span 2;
+}
+
+.requirements{
     @include content-box();
     border-radius: 5%;
-  }
+    grid-column: span 2;
+}
 
-  .requirements p:last-child{
+.requirements p:last-child{
     font-size: 10px;
-  }
+}
 
-  .sidebar{
-      margin: 0.5em;
-    text-align: center;
-    border: 2px solid;
-  }
+.sidebar{
+    margin: 0.5em;
+      text-align: center;
+      border: 2px solid;
+}
 
-  .design-selection nav ul{
+.design-selection nav ul{
     display: inline-block;
     padding: 1vw;
-
 
     & li{
         margin: 1vw;
@@ -65,4 +68,13 @@
         list-style: none;
         padding: 1vw;
     }
-  }
+}
+
+footer{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    grid-column: span 3;
+    grid-row: 4;
+}

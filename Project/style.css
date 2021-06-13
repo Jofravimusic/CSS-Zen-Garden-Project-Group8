@@ -167,21 +167,24 @@ font-family: 'Tinos', serif;*/
     text-align: center;
     border: 2px solid;
     border-radius: 10%;
-    padding: 1vw; }
+    padding: 1vw;
+    grid-column: 1; }
 
   .participation {
     margin: 0.5em;
     text-align: center;
     border: 2px solid;
     border-radius: 10%;
-    padding: 1vw; }
+    padding: 1vw;
+    grid-column: 2; }
 
   .benefits {
     margin: 0.5em;
     text-align: center;
     border: 2px solid;
     border-radius: 10%;
-    padding: 1vw; }
+    padding: 1vw;
+    grid-column: span 2; }
 
   .requirements {
     margin: 0.5em;
@@ -189,7 +192,8 @@ font-family: 'Tinos', serif;*/
     border: 2px solid;
     border-radius: 10%;
     padding: 1vw;
-    border-radius: 5%; }
+    border-radius: 5%;
+    grid-column: span 2; }
 
   .requirements p:last-child {
     font-size: 10px; }
@@ -207,6 +211,14 @@ font-family: 'Tinos', serif;*/
       border: 2px solid;
       border-radius: 25%;
       list-style: none;
-      padding: 1vw; } }
+      padding: 1vw; }
+
+  footer {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    grid-column: span 3;
+    grid-row: 4; } }
 
 /*# sourceMappingURL=style.css.map */
