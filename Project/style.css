@@ -6,8 +6,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Tinos", serif;
 }
 
+body {
+  background-color: #E2E2E2;
+}
+
 p {
   font-family: "Poppins", sans-serif;
+}
+
+header > h1 {
+  color: #57719E;
+  font-size: 3em;
 }
 
 @media screen and (max-width: 45em) {

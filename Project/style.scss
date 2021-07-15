@@ -21,8 +21,16 @@ $cursive: 'Patrick Hand', cursive;
 h1, h2, h3, h4, h5, h6{
     font-family: $heading;
 }
+body{
+    background-color: $color-4;
+}
 p{
     font-family: $content;
+}
+
+header > h1{
+    color: $color-1;
+    font-size: 3em;
 }
 
 @media screen and (max-width: 45em) {
