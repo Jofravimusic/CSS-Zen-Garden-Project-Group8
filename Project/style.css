@@ -21,6 +21,7 @@ header > h1 {
 
 a {
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 45em) {
@@ -113,8 +114,7 @@ a {
     text-align: center;
     line-height: 1.5em;
   }
-  .design-selection nav ul li a {
-    text-decoration: none;
+  .design-selection nav ul li {
     list-style-type: none;
   }
 
