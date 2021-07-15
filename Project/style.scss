@@ -26,7 +26,8 @@ p{
 }
 
 a{
-    font-family: $content; 
+    font-family: $content;
+    text-decoration: none; 
 }
 
 @media screen and (max-width: 45em) {
