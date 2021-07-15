@@ -12,6 +12,19 @@ $color-3: #B7CECE; // Red
 $color-4: #E2E2E2; // light grey
 $color-5: #ffffff; // white
 
+//Typography variables
+
+$heading: 'Tinos', serif;
+$content: 'Poppins', sans-serif;
+$cursive: 'Patrick Hand', cursive;
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $heading;
+}
+p{
+    font-family: $content;
+}
+
 @media screen and (max-width: 45em) {
     @import "partials/small-layout";    
 }
