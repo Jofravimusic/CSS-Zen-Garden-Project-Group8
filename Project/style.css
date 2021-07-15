@@ -1,17 +1,320 @@
-/* Error: expected "{".
- *    ,
- * 39 |     text-decoration: none; 
- *    |                          ^
- *    '
- *   style.scss 39:26  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 39 \2502      text-decoration: none; \a    \2502                           ^\a    \2575 \a   style.scss 39:26  root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400;1,600&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/*font-family: 'Patrick Hand', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Tinos', serif;*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Tinos", serif;
 }
+
+body {
+  background-color: #E2E2E2;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+header > h1 {
+  color: #57719E;
+  font-size: 3em;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 45em) {
+  /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  /*----------- apply a natural box layout model to all elements --------------*/
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  header h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  header h2 {
+    font-size: 35px;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  .summary {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .preamble {
+    margin: 1.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%;
+  }
+
+  .explanation {
+    margin: 1.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%;
+  }
+
+  .participation {
+    margin: 1.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%;
+  }
+
+  .benefits {
+    margin: 1.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%;
+  }
+
+  .requirements {
+    margin: 1.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%;
+    border-radius: 5%;
+  }
+
+  .requirements p:last-child {
+    font-size: 10px;
+  }
+
+  /* ICONS */
+  footer {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+
+  /* SELECT A DESIGN */
+  .select {
+    text-align: center;
+  }
+
+  .design-selection nav ul {
+    padding: 0;
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  .design-selection nav ul li {
+    list-style-type: none;
+  }
+
+  /* VIEW ALL DESIGNS */
+  .archives {
+    display: none;
+  }
+
+  .design-archives ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  .viewall {
+    list-style-type: none;
+  }
+
+  .viewall a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+  }
+
+  .next {
+    display: none;
+  }
+
+  /* RESOURCES */
+  .zen-resources ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.1em;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .resources {
+    text-align: center;
+    text-transform: uppercase;
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+
+  .view-css {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-align: center;
+  }
+
+  .css-resources {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    text-align: center;
+  }
+
+  .zen-faq {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    text-align: center;
+  }
+
+  .zen-submit {
+    grid-column: 3/5;
+    grid-row: 3/4;
+    text-align: center;
+  }
+
+  .zen-translations {
+    grid-column: 1/5;
+    grid-row: 4/5;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 45.01em) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 20vw;
+  }
+
+  .intro {
+    text-align: center;
+    grid-column: span 3;
+  }
+
+  header h2 {
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    line-height: 2em;
+  }
+
+  .summary {
+    margin-top: -1.3em;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    line-height: 2em;
+  }
+
+  .main {
+    grid-column: 1/span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+  }
+
+  .preamble {
+    margin: 0.5em;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%;
+    padding: 1vw;
+  }
+
+  .explanation {
+    margin: 0.5em;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%;
+    padding: 1vw;
+    grid-column: 1;
+  }
+
+  .participation {
+    margin: 0.5em;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%;
+    padding: 1vw;
+    grid-column: 2;
+  }
+
+  .benefits {
+    margin: 0.5em;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%;
+    padding: 1vw;
+    grid-column: span 2;
+  }
+
+  .requirements {
+    margin: 0.5em;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10%;
+    padding: 1vw;
+    border-radius: 5%;
+    grid-column: span 2;
+  }
+
+  .requirements p:last-child {
+    font-size: 10px;
+  }
+
+  .sidebar {
+    margin: 0.5em;
+    text-align: center;
+    border: 2px solid;
+  }
+
+  .design-selection nav ul {
+    display: inline-block;
+    padding: 1vw;
+  }
+  .design-selection nav ul li {
+    margin: 1vw;
+    border: 2px solid;
+    border-radius: 25%;
+    list-style: none;
+    padding: 1vw;
+  }
+
+  .design-archives {
+    border: 2px solid;
+    border-radius: 30%;
+    margin: 0.5em;
+    padding: 1vw;
+    font-size: 90%;
+  }
+
+  .zen-resources {
+    border: 2px solid;
+    border-radius: 30%;
+    margin: 0.5em;
+    padding: 1vw;
+    font-size: 75%;
+  }
+
+  footer {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    grid-column: span 3;
+    grid-row: 4;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
