@@ -10,6 +10,10 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  font-family: "Poppins", sans-serif;
+}
+
 @media screen and (max-width: 45em) {
   /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
   html {
@@ -95,12 +99,14 @@ p {
 
   .design-selection nav ul {
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.1em;
-    text-decoration: none;
+    display: block;
     list-style-type: none;
     text-align: center;
+    line-height: 1.5em;
+  }
+  .design-selection nav ul li a {
+    text-decoration: none;
+    list-style-type: none;
   }
 
   /* VIEW ALL DESIGNS */
