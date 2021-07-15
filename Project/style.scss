@@ -32,6 +32,9 @@ header > h1{
     color: $color-1;
     font-size: 3em;
 }
+a{
+    font-family: $content;
+}
 
 @media screen and (max-width: 45em) {
     @import "partials/small-layout";    
