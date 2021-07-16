@@ -11,6 +11,7 @@ $color-2: #000; // Dark
 $color-3: #B7CECE; // light green
 $color-4: #E2E2E2; // light grey
 $color-5: #ffffff; // white
+$color-6: #03e9f4; // light esmeralda
 
 //Typography variables
 
@@ -37,6 +38,7 @@ header > h1{
 a{
     font-family: $content;
     text-decoration: none; 
+    color: $color-6;
 }
 
 @media screen and (max-width: 45em) {
