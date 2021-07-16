@@ -6,19 +6,32 @@
 .intro{
     text-align: center;
       grid-column: span 3;
+      background-image: url("images/93035.jpg");
+      height: 80vh;
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
 }
 header h2{
-    border-top: 2px solid;
-    border-left: 2px solid;
-    border-right: 2px solid;
+    //border-top: 2px solid;
+    //border-left: 2px solid;
+    //border-right: 2px solid;
     line-height: 2em;
+    color: $color-4;
+    font-size: 3em;
+    //margin: 1em;
 }
 .summary{
-    margin-top: -1.3em;
-    border-bottom: 2px solid;
-    border-left: 2px solid;
-    border-right: 2px solid;
+    //margin: 2.5em;
+    //margin-top: -2.5em;
+    //border-bottom: 2px solid;
+    //border-left: 2px solid;
+    //border-right: 2px solid;
     line-height: 2em;
+    color: $color-4;
+    font-size: 1.2em;
 }
 
 .main{
@@ -37,7 +50,10 @@ header h2{
 }
 
 .preamble{
-    @include content-box();
+    margin: 0.5em;
+    text-align: center;
+    padding: 1vw;
+    color: $color-5;
 }
 
 .explanation {

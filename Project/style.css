@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: #E2E2E2;
+  margin: 0;
 }
 
 p {
@@ -15,7 +16,7 @@ p {
 }
 
 header > h1 {
-  color: #57719E;
+  color: #B7CECE;
   font-size: 3em;
 }
 
@@ -200,21 +201,25 @@ a {
   .intro {
     text-align: center;
     grid-column: span 3;
+    background-image: url("images/93035.jpg");
+    height: 80vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   header h2 {
-    border-top: 2px solid;
-    border-left: 2px solid;
-    border-right: 2px solid;
     line-height: 2em;
+    color: #E2E2E2;
+    font-size: 3em;
   }
 
   .summary {
-    margin-top: -1.3em;
-    border-bottom: 2px solid;
-    border-left: 2px solid;
-    border-right: 2px solid;
     line-height: 2em;
+    color: #E2E2E2;
+    font-size: 1.2em;
   }
 
   .main {
@@ -227,9 +232,8 @@ a {
   .preamble {
     margin: 0.5em;
     text-align: center;
-    border: 2px solid;
-    border-radius: 10%;
     padding: 1vw;
+    color: #ffffff;
   }
 
   .explanation {
