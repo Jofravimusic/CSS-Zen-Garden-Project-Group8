@@ -6,7 +6,7 @@ font-family: 'Tinos', serif;*/
 
 // color palette - these colors will be the color swatches of the Colors section
 
-$color-1: #57719E; // Cornflower Blue - Action color
+$color-1: #006e6a; // Cornflower Blue - Action color
 $color-2: #000; // Dark 
 $color-3: #B7CECE; // light green
 $color-4: #E2E2E2; // light grey
@@ -24,8 +24,9 @@ h1, h2, h3, h4, h5, h6{
     font-size: 2em;
 }
 body{
-    background-color: $color-4;
+    background: $color-1;
     margin: 0;
+    color: $color-3;
 }
 p{
     font-family: $content;
