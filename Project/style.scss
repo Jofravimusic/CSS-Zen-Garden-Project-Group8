@@ -19,7 +19,8 @@ $content: 'Poppins', sans-serif;
 $cursive: 'Patrick Hand', cursive;
 
 h1, h2, h3, h4, h5, h6{
-    font-family: $heading;
+    font-family: $cursive;
+    font-size: 2em;
 }
 body{
     background-color: $color-4;

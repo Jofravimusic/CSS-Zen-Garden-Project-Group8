@@ -7,22 +7,26 @@
     text-align: center;
       grid-column: span 3;
       background-image: url("images/93035.jpg");
-      height: 45em;
+      height: 46em;
       position: relative;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
 }
-header h2{
-    //border-top: 2px solid;
-    //border-left: 2px solid;
-    //border-right: 2px solid;
+
+header {
+    & h2{
+    font-family: $heading;
     line-height: 2em;
     color: $color-4;
     font-size: 3em;
-    //margin: 1em;
+    }
+    & h1{
+        font-family: $heading;
+    }
 }
+
 .summary{
     //margin: 2.5em;
     //margin-top: -2.5em;
@@ -54,6 +58,9 @@ header h2{
     text-align: center;
     padding: 1vw;
     color: $color-5;
+    & h3{
+        font-family: $heading;
+    }
 }
 
 .explanation {
