@@ -40,6 +40,13 @@ a{
     font-family: $content;
     text-decoration: none; 
     color: $color-6;
+    transition: 0.5s;
+    &:hover{
+        transition: 0.5s;
+        background-color: rgba($color: $color-3, $alpha: 0.3);
+        border-radius: 20%;
+        
+    }
 }
 
 @media screen and (max-width: 45em) {

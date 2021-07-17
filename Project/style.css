@@ -26,6 +26,12 @@ a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #03e9f4;
+  transition: 0.5s;
+}
+a:hover {
+  transition: 0.5s;
+  background-color: rgba(183, 206, 206, 0.3);
+  border-radius: 20%;
 }
 
 @media screen and (max-width: 45em) {
@@ -79,36 +85,41 @@ a {
   .preamble {
     margin: 1.5rem;
     text-align: center;
-    border: 2px solid;
     border-radius: 10%;
+    background-color: rgba(183, 206, 206, 0.3);
+    padding: 1em;
   }
 
   .explanation {
     margin: 1.5rem;
     text-align: center;
-    border: 2px solid;
     border-radius: 10%;
+    background-color: rgba(183, 206, 206, 0.3);
+    padding: 1em;
   }
 
   .participation {
     margin: 1.5rem;
     text-align: center;
-    border: 2px solid;
     border-radius: 10%;
+    background-color: rgba(183, 206, 206, 0.3);
+    padding: 1em;
   }
 
   .benefits {
     margin: 1.5rem;
     text-align: center;
-    border: 2px solid;
     border-radius: 10%;
+    background-color: rgba(183, 206, 206, 0.3);
+    padding: 1em;
   }
 
   .requirements {
     margin: 1.5rem;
     text-align: center;
-    border: 2px solid;
     border-radius: 10%;
+    background-color: rgba(183, 206, 206, 0.3);
+    padding: 1em;
     border-radius: 5%;
   }
 
@@ -267,36 +278,36 @@ a {
   .explanation {
     margin: 0.5em;
     text-align: center;
-    border: 2px solid;
     border-radius: 10%;
     padding: 1vw;
+    background-color: rgba(183, 206, 206, 0.3);
     grid-column: 1;
   }
 
   .participation {
     margin: 0.5em;
     text-align: center;
-    border: 2px solid;
     border-radius: 10%;
     padding: 1vw;
+    background-color: rgba(183, 206, 206, 0.3);
     grid-column: 2;
   }
 
   .benefits {
     margin: 0.5em;
     text-align: center;
-    border: 2px solid;
     border-radius: 10%;
     padding: 1vw;
+    background-color: rgba(183, 206, 206, 0.3);
     grid-column: span 2;
   }
 
   .requirements {
     margin: 0.5em;
     text-align: center;
-    border: 2px solid;
     border-radius: 10%;
     padding: 1vw;
+    background-color: rgba(183, 206, 206, 0.3);
     border-radius: 5%;
     grid-column: span 2;
   }
@@ -308,7 +319,8 @@ a {
   .sidebar {
     margin: 0.5em;
     text-align: center;
-    border: 2px solid;
+    border-radius: 10%;
+    background-color: rgba(183, 206, 206, 0.3);
   }
 
   .design-selection nav ul {
@@ -333,6 +345,7 @@ a {
   .design-archives ul li {
     list-style: none;
     text-align: left;
+    margin-left: -2em;
   }
 
   .zen-resources {
@@ -345,6 +358,7 @@ a {
   .zen-resources ul li {
     list-style: none;
     text-align: left;
+    margin-left: -2em;
   }
 
   footer {
@@ -354,6 +368,28 @@ a {
     margin: 1rem;
     grid-column: span 3;
     grid-row: 4;
+  }
+  footer a {
+    background-color: rgba(183, 206, 206, 0.3);
+    padding: 1em;
+    border-radius: 50%;
+  }
+  footer a:hover {
+    animation: poujump 1s infinite;
+  }
+
+  @keyframes poujump {
+    0% {
+      border-radius: 50% 50% 10% 10%;
+    }
+    50% {
+      transform: translateY(-50%);
+      border-radius: 50%;
+    }
+    100% {
+      transform: translateY(0);
+      border-radius: 50% 50% 10% 10%;
+    }
   }
 }
 

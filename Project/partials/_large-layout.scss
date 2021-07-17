@@ -48,9 +48,10 @@ header {
 @mixin content-box{
     margin: 0.5em;
     text-align: center;
-    border: 2px solid;
+    //border: 2px solid;
     border-radius: 10%;
     padding: 1vw;
+    background-color: rgba($color: $color-3, $alpha: 0.3);
 }
 
 .preamble{
@@ -91,7 +92,9 @@ header {
 .sidebar{
     margin: 0.5em;
       text-align: center;
-      border: 2px solid;
+      //border: 2px solid;
+      border-radius: 10%;
+      background-color: rgba($color: $color-3, $alpha: 0.3);;
 }
 
 .design-selection nav ul{
@@ -118,6 +121,7 @@ header {
     ul li{
         list-style: none;
         text-align: left;
+        margin-left: -2em;
     }
 }
 
@@ -130,6 +134,7 @@ header {
     ul li {
         list-style: none;
         text-align: left;
+        margin-left: -2em;
     }
 }
 
@@ -140,4 +145,26 @@ footer{
     margin: 1rem;
     grid-column: span 3;
     grid-row: 4;
+    & a{
+        background-color: rgba($color: $color-3, $alpha: 0.3);
+        padding: 1em;
+        border-radius: 50%;
+        &:hover{
+            animation: poujump 1s infinite;
+        }
+    }
+}
+
+@keyframes poujump {
+0%{
+    border-radius: 50% 50% 10% 10%;
+}
+50%{
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+100%{
+    transform: translateY(0);
+    border-radius: 50% 50% 10% 10%;
+}
 }
