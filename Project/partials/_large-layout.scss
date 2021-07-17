@@ -60,7 +60,8 @@ header {
     padding: 1vw;
     color: $color-5;
     & h3{
-        font-family: $heading;
+        font-family: $heading;        
+        color: $color-5;
     }
 }
 
@@ -106,7 +107,12 @@ header {
         background-color: rgba($color: $color-2, $alpha: 0.3);
         border-radius: 3em;
         list-style: none;
-        padding: 1vw;
+        padding: 1vw;        
+        font-family: $cursive;
+        & a {
+            font-family: $cursive;
+            font-size: 1.2em;
+        }
 
     }
 }
@@ -118,12 +124,13 @@ header {
     background-color: rgba($color: $color-2, $alpha: 0.3);
     border-radius: 3em;
     margin: 0.5em;
+    margin-top: 5em;
     padding: 1vw;
     font-size: 90%;
     ul li{
         list-style: none;
-        text-align: left;
-        margin-left: -2em;
+        text-align: center;
+        margin-left: -2.7em;
     }
 }
 
@@ -132,12 +139,13 @@ header {
     background-color: rgba($color: $color-2, $alpha: 0.3);
     border-radius: 3em;
     margin: 0.5em;
+    margin-top: 5em;
     padding: 1vw;
     font-size: 75%;
     ul li {
         list-style: none;
-        text-align: left;
-        margin-left: -2em;
+        text-align: center;
+        margin-left: -3.5em;
     }
 }
 
@@ -149,6 +157,7 @@ footer{
     grid-column: span 3;
     grid-row: 4;
     & a{
+        font-family: $cursive;
         background-color: rgba($color: $color-3, $alpha: 0.3);
         padding: 1em;
         border-radius: 50%;

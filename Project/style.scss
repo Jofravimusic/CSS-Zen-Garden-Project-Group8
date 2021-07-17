@@ -21,7 +21,8 @@ $cursive: 'Patrick Hand', cursive;
 
 h1, h2, h3, h4, h5, h6{
     font-family: $cursive;
-    font-size: 2em;
+    font-size: 2em;    
+    color: rgba($color: $color-2, $alpha: 0.7);
 }
 body{
     background: linear-gradient($color-1, $color-2);

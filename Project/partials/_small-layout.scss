@@ -70,7 +70,7 @@ header h1 {
 
   .requirements{
     @include content-box();
-    border-radius: 5%;
+    border-radius: 3em;
   }
 
   .requirements p:last-child{
@@ -84,12 +84,18 @@ footer{
     display: flex;
     justify-content: space-between;
     margin: 1rem;
+    & a{
+      padding: 0.5em;
+      border-radius: 2em;
+      background-color: rgba($color: $color-3, $alpha: 0.3);
+    }
   }
   
   /* SELECT A DESIGN */
   
   .select{
     text-align: center;
+    color: $color-5;    
   }
   
   .design-selection nav ul{
@@ -118,13 +124,21 @@ footer{
   
   .viewall{
     list-style-type: none;
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
   }
   
   .viewall a {
     text-decoration: none;
     list-style-type: none;
-    color: black;
-    
+    color: $color-5;    
+    font-family: $cursive;
+    border-radius: 3em;
+    background-color: rgba($color: $color-3, $alpha: 0.3);
+    padding: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
   
   .next {
@@ -147,6 +161,7 @@ footer{
     text-transform: uppercase;
     grid-column: 1/5;
     grid-row: 1/2;
+    color: $color-5;    
   }
   
   .view-css{
