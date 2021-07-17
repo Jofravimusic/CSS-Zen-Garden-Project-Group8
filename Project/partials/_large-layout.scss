@@ -93,7 +93,7 @@ header {
       text-align: center;
       //border: 2px solid;
       border-radius: 3em;
-      background-color: rgba($color: $color-3, $alpha: 0.3);;
+      background-color: rgba($color: $color-3, $alpha: 0.3);
 }
 
 .design-selection nav ul{
@@ -102,18 +102,21 @@ header {
 
     & li{
         margin: 1vw;
-        border: 2px solid;
-        border-radius: 25%;
+        //border: 2px solid;
+        background-color: rgba($color: $color-2, $alpha: 0.3);
+        border-radius: 3em;
         list-style: none;
         padding: 1vw;
+
     }
 }
 
 
 
 .design-archives{
-    border: 2px solid;
-    border-radius: 30%;
+    //border: 2px solid;
+    background-color: rgba($color: $color-2, $alpha: 0.3);
+    border-radius: 3em;
     margin: 0.5em;
     padding: 1vw;
     font-size: 90%;
@@ -125,8 +128,9 @@ header {
 }
 
 .zen-resources{
-    border: 2px solid;
-    border-radius: 30%;
+    //border: 2px solid;
+    background-color: rgba($color: $color-2, $alpha: 0.3);
+    border-radius: 3em;
     margin: 0.5em;
     padding: 1vw;
     font-size: 75%;
@@ -149,6 +153,7 @@ footer{
         padding: 1em;
         border-radius: 50%;
         &:hover{
+            padding: 1em;
             animation: poujump 1s infinite;
         }
     }
