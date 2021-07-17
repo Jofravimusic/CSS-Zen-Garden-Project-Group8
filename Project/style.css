@@ -330,6 +330,10 @@ a {
     padding: 1vw;
     font-size: 90%;
   }
+  .design-archives ul li {
+    list-style: none;
+    text-align: left;
+  }
 
   .zen-resources {
     border: 2px solid;
@@ -337,6 +341,10 @@ a {
     margin: 0.5em;
     padding: 1vw;
     font-size: 75%;
+  }
+  .zen-resources ul li {
+    list-style: none;
+    text-align: left;
   }
 
   footer {

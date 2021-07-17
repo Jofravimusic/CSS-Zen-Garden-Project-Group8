@@ -107,12 +107,18 @@ header {
     }
 }
 
+
+
 .design-archives{
     border: 2px solid;
     border-radius: 30%;
     margin: 0.5em;
     padding: 1vw;
     font-size: 90%;
+    ul li{
+        list-style: none;
+        text-align: left;
+    }
 }
 
 .zen-resources{
@@ -121,6 +127,10 @@ header {
     margin: 0.5em;
     padding: 1vw;
     font-size: 75%;
+    ul li {
+        list-style: none;
+        text-align: left;
+    }
 }
 
 footer{
