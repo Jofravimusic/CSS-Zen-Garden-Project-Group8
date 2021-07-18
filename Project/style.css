@@ -59,8 +59,20 @@ a:hover {
     color: transparent;
     margin: 0;
     text-indent: -150%;
+    animation: move 10s ease infinite;
   }
 
+  @keyframes move {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
   header h2 {
     font-size: 35px;
     margin: -1px;
@@ -275,8 +287,20 @@ a:hover {
     background-size: 15em;
     color: transparent;
     text-indent: -150%;
+    animation: move 10s ease infinite;
   }
 
+  @keyframes move {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
   .summary {
     line-height: 2em;
     color: #E2E2E2;

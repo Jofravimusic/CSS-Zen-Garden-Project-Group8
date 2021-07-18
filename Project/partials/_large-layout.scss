@@ -30,8 +30,22 @@ header {
     background-size: 15em;
         color: transparent;
         text-indent: -150%;
+        animation: move 10s ease infinite;
     }
 }
+
+@keyframes move{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+      
+    }
+    100%{
+      background-position: 0%;
+    }
+  }
 
 .summary{
     //margin: 2.5em;
