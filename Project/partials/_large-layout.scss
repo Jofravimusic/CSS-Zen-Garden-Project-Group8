@@ -30,7 +30,7 @@ header {
     background-size: 15em;
         color: transparent;
         text-indent: -150%;
-        animation: move 10s ease infinite;
+        animation: move 15s ease infinite;
     }
 }
 
@@ -38,9 +38,17 @@ header {
     0%{
       background-position: 0% 50%;
     }
+    25%{
+      background-position: 100% 50%;
+      transform: scale(0.5);
+    }
     50%{
       background-position: 100% 50%;
-      
+      transform: scale(1.0);
+    }
+    75%{
+      background-position: 100% 50%;
+      transform: scale(0.5);
     }
     100%{
       background-position: 0%;
