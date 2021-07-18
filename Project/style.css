@@ -58,6 +58,7 @@ a:hover {
     background-size: 8em;
     color: transparent;
     margin: 0;
+    text-indent: -150%;
   }
 
   header h2 {
@@ -273,6 +274,7 @@ a:hover {
     background-position: center;
     background-size: 15em;
     color: transparent;
+    text-indent: -150%;
   }
 
   .summary {
